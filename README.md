@@ -11,4 +11,4 @@ Tâches à faire :
   		Je ne suis pas sûr de ce que demande l'énoncé. Faut-il générer les DEUX RDF, ou juste le premier ?.
   		Tant-pis, les deux sont faits.
   - Rédaction rapport sur LaTeX.
-	https://fr.sharelatex.com/project/588f954e86d21c9461065f3b  
+https://fr.sharelatex.com/project/588f9a9986d21c9461066187
