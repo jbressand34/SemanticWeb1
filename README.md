@@ -1,4 +1,8 @@
 
+Commentaires : 
+
+  - J'ai passé les RDF générés à partir de Jena au visualiseur, ils ont l'air corrects (sauf erreur de ma part). Je t'invite à vérifier quand même.   
+
 Tâches à faire : 
    
   - JenaAPI ; Sauvegarde dans un fichier/Générer graph (???).
