@@ -98,18 +98,19 @@ public class Partie2 {
 			
 		 Model mLOV = ModelFactory.createDefaultModel();
 		
-		
 		mLOV.setNsPrefix( "rdf", RDF.getURI() );
 		mLOV.setNsPrefix( "rdfs", RDFS.getURI());
 		mLOV.setNsPrefix( "mo", "http://pearl.org/ontology/mo#" );
 		mLOV.setNsPrefix( "qqpf", "http://quelquepart.fake/qqpf-schema#" );
 		mLOV.setNsPrefix( "dbp", "http://dbpedia.org/page/#" );
 		mLOV.setNsPrefix( "foaf", "http://xmlns.com/foaf/0.1/#" );
+		mLOV.setNsPrefix( "keys", "http://purl.org/NET/c4dm/keys.owl#" );
+		mLOV.setNsPrefix( "event", "http://purl.org/NET/c4dm/event.owl#" );
 		
 		String mo = "http://pearl.org/ontology/mo";
 		String dbp = "http://dbpedia.org/page/";
 		String foaf = "http://xmlns.com/foaf/0.1/";
-		String event = "http://purl.org/NET/c4dm/eveny.owl";
+		String event = "http://purl.org/NET/c4dm/event.owl";
 		String keys = "http://purl.org/NET/c4dm/keys.owl";
 		
 		//*************************************RESSOURCES-RESOURCES******************************************
@@ -208,7 +209,7 @@ public class Partie2 {
 				Ecriture du code RDF dans la console.
 				Ecriture dans un fichier à faire !
 			*/
-				
+
 		System.out.println("---------------------------------------SCHEMA LOV-----------------------------------");
 			mLOV.write(System.out, "RDF/XML-ABBREV");
 
