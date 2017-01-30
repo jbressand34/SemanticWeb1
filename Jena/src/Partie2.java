@@ -212,7 +212,10 @@ public class Partie2 {
 
 		System.out.println("---------------------------------------SCHEMA LOV-----------------------------------");
 			mLOV.write(System.out, "RDF/XML-ABBREV");
-
+			mLOV.write(System.out, "Turtle");
+			mLOV.write(System.out, "RDF/JSON");
+			mLOV.write(System.out, "N3");
+			mLOV.write(System.out, "N-TRIPLES");
 			 
 	
 	}
