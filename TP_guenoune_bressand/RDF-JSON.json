@@ -1,0 +1,223 @@
+{ 
+  "http://quelquepart.fake/qqpf-schema#Composition_Jupiter" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Composition"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#produced_work" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Symphony_No._41_(Mozart)"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#genre" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Symphony"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#composer" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Wolfgang_Amadeus_Mozart"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#London_Symphony_Orchestra" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#MusicArtist"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#C_major" : { 
+    "http://pearl.org/ontology/mo#key_name" : [ { 
+      "type" : "literal" ,
+      "value" : "C-Ut majeur"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://pearl.org/ontology/mo#Key"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Allegro_Vivace" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Movement"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#movement_number" : [ { 
+      "type" : "literal" ,
+      "value" : "4"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Claudio_Abbado" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#MusicArtist"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#MusicArtist" : { 
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "http://quelquepart.fake/qqpf-schema#Enregistrement_Jupiter" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Performance"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#conductor" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Claudio_Abbado"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#performance_of" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Symphony_No._41_(Mozart)"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#performer" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#London_Symphony_Orchestra"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Molto_Allegro" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Movement"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#movement_number" : [ { 
+      "type" : "literal" ,
+      "value" : "1"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Symphony" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://pearl.org/ontology/mo#Genre"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Composition" : { 
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://purl.org/NET/c4dm/event.owl#Event"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Andante_Cantabile" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Movement"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#movement_number" : [ { 
+      "type" : "literal" ,
+      "value" : "3"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Menuetto" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Movement"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#movement_number" : [ { 
+      "type" : "literal" ,
+      "value" : "2"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Movement" : { 
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#MusicalWork"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Wolfgang_Amadeus_Mozart" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#MusicArtist"
+    }
+     ]
+  }
+   ,
+  "http://dbpedia.org/page/#Symphony_No._41_(Mozart)" : { 
+    "http://pearl.org/ontology/mo#title" : [ { 
+      "type" : "literal" ,
+      "value" : "Jupiter"
+    }
+     ] ,
+    "http://quelquepart.fake/qqpf-schema#est_compose_par" : [ { 
+      "type" : "uri" ,
+      "value" : "http://quelquepart.fake/qqpf-schema#mozart"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#key" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#C_major"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#MusicalWork"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#composed_in" : [ { 
+      "type" : "literal" ,
+      "value" : "1980"
+    }
+     ] ,
+    "http://quelquepart.fake/qqpf-schema#enregistre_par" : [ { 
+      "type" : "uri" ,
+      "value" : "http://quelquepart.fake/qqpf-schema#orchestre_symphonique_de_londres"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "Symphonie 41"
+    }
+     ] ,
+    "http://pearl.org/ontology/mo#movement" : [ { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Andante_Cantabile"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Menuetto"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Allegro_Vivace"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://dbpedia.org/page/#Molto_Allegro"
+    }
+     ]
+  }
+}
