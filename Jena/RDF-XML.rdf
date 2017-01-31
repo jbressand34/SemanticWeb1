@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbp="http://dbpedia.org/page/#"
+    xmlns:mo="http://pearl.org/ontology/mo#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/#"
+    xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+    xmlns:qqpf="http://quelquepart.fake/qqpf-schema#"
+    xmlns:keys="http://purl.org/NET/c4dm/keys.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <dbp:Composition rdf:about="http://quelquepart.fake/qqpf-schema#Composition_Jupiter">
+    <mo:produced_work>
+      <dbp:MusicalWork rdf:about="http://dbpedia.org/page/#Symphony_No._41_(Mozart)">
+        <mo:movement>
+          <dbp:Movement rdf:about="http://dbpedia.org/page/#Allegro_Vivace">
+            <mo:movement_number>4</mo:movement_number>
+          </dbp:Movement>
+        </mo:movement>
+        <mo:title>Jupiter</mo:title>
+        <mo:movement>
+          <dbp:Movement rdf:about="http://dbpedia.org/page/#Menuetto">
+            <mo:movement_number>2</mo:movement_number>
+          </dbp:Movement>
+        </mo:movement>
+        <qqpf:est_compose_par rdf:resource="http://quelquepart.fake/qqpf-schema#mozart"/>
+        <mo:movement>
+          <dbp:Movement rdf:about="http://dbpedia.org/page/#Molto_Allegro">
+            <mo:movement_number>1</mo:movement_number>
+          </dbp:Movement>
+        </mo:movement>
+        <qqpf:enregistre_par rdf:resource="http://quelquepart.fake/qqpf-schema#orchestre_symphonique_de_londres"/>
+        <mo:movement>
+          <dbp:Movement rdf:about="http://dbpedia.org/page/#Andante_Cantabile">
+            <mo:movement_number>3</mo:movement_number>
+          </dbp:Movement>
+        </mo:movement>
+        <rdfs:label>Symphonie 41</rdfs:label>
+        <mo:key>
+          <mo:Key rdf:about="http://dbpedia.org/page/#C_major">
+            <mo:key_name>C-Ut majeur</mo:key_name>
+          </mo:Key>
+        </mo:key>
+        <mo:composed_in>1980</mo:composed_in>
+      </dbp:MusicalWork>
+    </mo:produced_work>
+    <mo:composer>
+      <dbp:MusicArtist rdf:about="http://dbpedia.org/page/#Wolfgang_Amadeus_Mozart"/>
+    </mo:composer>
+    <mo:genre>
+      <mo:Genre rdf:about="http://dbpedia.org/page/#Symphony"/>
+    </mo:genre>
+  </dbp:Composition>
+  <dbp:Performance rdf:about="http://quelquepart.fake/qqpf-schema#Enregistrement_Jupiter">
+    <mo:conductor>
+      <dbp:MusicArtist rdf:about="http://dbpedia.org/page/#Claudio_Abbado"/>
+    </mo:conductor>
+    <mo:performance_of rdf:resource="http://dbpedia.org/page/#Symphony_No._41_(Mozart)"/>
+    <mo:performer>
+      <dbp:MusicArtist rdf:about="http://dbpedia.org/page/#London_Symphony_Orchestra"/>
+    </mo:performer>
+  </dbp:Performance>
+  <rdf:Description rdf:about="http://dbpedia.org/page/#MusicArtist">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/#Composition">
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/page/#Movement">
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/page/#MusicalWork"/>
+  </rdf:Description>
+</rdf:RDF>

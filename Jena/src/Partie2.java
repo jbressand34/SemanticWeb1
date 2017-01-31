@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import com.hp.hpl.jena.rdf.model.*;
@@ -9,7 +10,7 @@ import com.hp.hpl.jena.vocabulary.RDFS;
 
 public class Partie2 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		Model m = ModelFactory.createDefaultModel();
 		//setNsPrefix définit un préfix personnalisé (rdfs,qqpf...)
@@ -211,11 +212,18 @@ public class Partie2 {
 			*/
 
 		System.out.println("---------------------------------------SCHEMA LOV-----------------------------------");
-			mLOV.write(System.out, "RDF/XML-ABBREV");
-			mLOV.write(System.out, "Turtle");
-			mLOV.write(System.out, "RDF/JSON");
-			mLOV.write(System.out, "N3");
-			mLOV.write(System.out, "N-TRIPLES");
+			
+		
+		FileWriter out = new FileWriter("RDF-XML.rdf");
+		mLOV.write(out, "RDF/XML-ABBREV");
+		out = new FileWriter("Turtle.ttl");
+		mLOV.write(out, "Turtle");
+		out = new FileWriter("RDF-JSON.json");
+		mLOV.write(out, "RDF/JSON");
+		out = new FileWriter("N3.n3");
+		mLOV.write(out, "N3");
+		out = new FileWriter("N-Triples.nt");
+		mLOV.write(out, "N-TRIPLES");
 			 
 	
 	}
