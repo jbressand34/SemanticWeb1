@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:qqpf="http://quelquepart.fake/qqpf-schema#">
+
+<rdf:Description rdf:about="qqpf:Oeuvre">
+<rdf:type rdf:resource="rdfs:Class" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:Personne">
+<rdf:type rdf:resource="rdfs:Class" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:Orchestre">
+<rdf:type rdf:resource="rdfs:Class" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:jupiter">
+<rdf:type rdf:resource="qqpf:Oeuvre" />
+<qqpf:nom_oeuvre>Jupiter</qqpf:nom_oeuvre>
+<qqpf:deuxieme_nom_oeuvre>41 Symphony</qqpf:deuxieme_nom_oeuvre>
+<qqpf:genre_oeuvre>Symphony</qqpf:genre_oeuvre>
+<qqpf:tonalité_oeuvre>ut majeur</qqpf:tonalité_oeuvre>
+<qqpf:enregistré_en>1980</qqpf:enregistré_en>   
+<qqpf:contient>
+
+<rdf:Seq>
+        <rdf:_1 rdf:resource="qqpf:allegro_vivace" />
+        <rdf:_2 rdf:resource="qqpf:andante_cantabile" />
+        <rdf:_3 rdf:resource="qqpf:menuetto" />
+        <rdf:_4 rdf:resource="qqpf:molto allegro" />
+</rdf:Seq>
+
+</qqpf:contient>
+
+<qqpf:enregistré_par rdf:resource="qqpf:orchestre_symphonique_de_londres"/> 
+<qqpf:enregistré_sous_la_direction_de rdf:resource="qqpf:claudio_abbado"/> 
+<qqpf:est_composé_par rdf:resource="qqpf:mozart"/> 
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:mozart">
+<rdf:type rdf:resource="qqpf:personne" />
+<qqpf:lastname>Mozart</qqpf:lastname>
+<qqpf:firstname1>Amadeus</qqpf:firstname1>
+<qqpf:firstname2>Wolfgang</qqpf:firstname2>
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:orchestre_symphonique_de_londres">
+<rdf:type rdf:resource="qqpf:orchestre" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:claudio_abbado">
+<rdf:type rdf:resource="qqpf:personne" />
+<qqpf:lastname>Abbado</qqpf:lastname>
+<qqpf:firstname>Claudio</qqpf:firstname>
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:allegro_vivace">
+	<rdf:type rdf:resource="qqpf:Oeuvre" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:andante_cantabile">
+	<rdf:type rdf:resource="qqpf:Oeuvre" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:menuetto">
+	<rdf:type rdf:resource="qqpf:Oeuvre" />
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:molto_allegro">
+	<rdf:type rdf:resource="qqpf:Oeuvre" />
+</rdf:Description>
+</rdf:RDF>

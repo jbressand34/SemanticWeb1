@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:qqpf="http://quelquepart.fake/qqpf-schema#"
+   xmlns:mo="http://purl.org/ontology/mo/"
+   xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+   xmlns:dbp="http://dbpedia.org/page/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="mo:Composition">
+	<rdfs:SubClassOf rdf:resource="event:Event"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Symphony">
+	<rdf:type rdf:resource="mo:Genre"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:CompositionJupiter">
+	<rdf:type rdf:resource="mo:Composition"/>
+	<mo:Composer rdf:resource="dbp:Wolfgang_Amadeus_Mozart"/>
+	<mo:genre rdf:resource="dbp:Symphony"/>
+	<mo:produced_work rdf:resource="dbp:Symphonie_No_41_(Mozart)"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="mo:MusicArtist">
+	<rdfs:SubClassOf rdf:resource="foaf:Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Claudio_Abbado">
+	<rdf:type rdf:resource="mo:MusicArtist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:London_Symphony_Orchestra">
+	<rdf:type rdf:resource="mo:MusicArtist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Wolfgang_Amadeus_Mozart">
+	<rdf:type rdf:resource="mo:MusicArtist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="qqpf:EnregistrementJupiter">
+	<rdf:type rdf:resource="mo:Performance"/>
+	<mo:performance_of rdf:resource="dbp:Symphonie_No_41_(Mozart)"/>
+	<mo:conductor rdf:resource="dbp:Claudio_Abbado"/>
+	<mo:performer rdf:resource="dbp:London_Symphony_Orchestra"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="mo:Movement">
+	<rdf:type rdf:resource="mo:MusicalWork"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Molto_Allegro">
+	<mo:movement_number>1</mo:movement_number>
+	<rdf:type rdf:resource="mo:Movement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Menuetto">
+	<mo:movement_number>2</mo:movement_number>
+	<rdf:type rdf:resource="mo:Movement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Andante_Cantabile">
+	<mo:movement_number>3</mo:movement_number>
+	<rdf:type rdf:resource="mo:Movement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Allegro_Vivace">
+	<mo:movement_number>4</mo:movement_number>
+	<rdf:type rdf:resource="mo:Movement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:C_major">
+	<rdf:type rdf:resource="mo:Key"/>
+	<mo:key_name>C-Ut Major</mo:key_name>
+</rdf:Description>
+
+<rdf:Description rdf:about="dbp:Symphonie_No_41_(Mozart)">
+	<rdf:type rdf:resource="mo:MusicalWork"/>
+	<mo:movement rdf:resource="dbp:Molto_Allegro"/>
+	<mo:movement rdf:resource="dbp:Menuetto"/>
+	<mo:movement rdf:resource="dbp:Andante_Cantabile"/>
+	<mo:movement rdf:resource="dbp:Allegro_Vivace"/>
+	<mo:composed_in>1980</mo:composed_in>
+	<mo:key rdf:resource="dbp:C_major"/>
+	<mo:title>Jupiter</mo:title>
+	<rdfs:label>Symphonie 41</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>
