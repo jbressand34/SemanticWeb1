@@ -70,9 +70,9 @@ public class Partie2 {
 		.add(jupiter, enregistre_par, orchestre_londres)
 		.add(blank_node,RDF.type, seq)
 		.add(blank_node,elem1, allegro_vivace)
-		.add(blank_node,elem1, andante_cantabile)
-		.add(blank_node,elem1, menuetto)
-		.add(blank_node,elem1, molto_allegro)
+		.add(blank_node,elem2, andante_cantabile)
+		.add(blank_node,elem3, menuetto)
+		.add(blank_node,elem4, molto_allegro)
 		.add(allegro_vivace, RDF.type, oeuvre)
 		.add(andante_cantabile, RDF.type, oeuvre)
 		.add(menuetto, RDF.type, oeuvre)
@@ -120,12 +120,12 @@ public class Partie2 {
 		 
 		Resource MusicArtist_CLASS = m.createResource(dbp+"#MusicArtist");
 		Resource Agent_CLASS = m.createResource(foaf+"#Agent",RDFS.Class);
-		Resource MusicalWork_CLASS = m.createResource(dbp+"#MusicalWork");
-		Resource Movement_CLASS = m.createResource(dbp+"#Movement");
+		Resource MusicalWork_CLASS = m.createResource(mo+"#MusicalWork");
+		Resource Movement_CLASS = m.createResource(mo+"#Movement");
 		Resource Event_CLASS = m.createResource(event+"#Event");
-		Resource Performance_CLASS = m.createResource(dbp+"#Performance");
-		Resource Composition_CLASS = m.createResource(dbp+"#Composition");
-		Resource Key_CLASS = m.createResource(mo+"#Key");
+		Resource Performance_CLASS = m.createResource(mo+"#Performance");
+		Resource Composition_CLASS = m.createResource(mo+"#Composition");
+		Resource Key_CLASS = m.createResource(keys+"#Key");
 		Resource Genre_CLASS = m.createResource(mo+"#Genre");
 		
 		//Création ressources d'instances-Creating instance resources.
