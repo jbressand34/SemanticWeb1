@@ -1,0 +1,72 @@
+@prefix mo:      <http://pearl.org/ontology/mo#> .
+@prefix qqpf:    <http://quelquepart.fake/qqpf-schema#> .
+@prefix dbp:     <http://dbpedia.org/page/#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix keys:    <http://purl.org/NET/c4dm/keys.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+
+qqpf:Composition_Jupiter
+      a       dbp:Composition ;
+      mo:composer dbp:Wolfgang_Amadeus_Mozart ;
+      mo:genre dbp:Symphony ;
+      mo:produced_work <http://dbpedia.org/page/#Symphony_No._41_(Mozart)> .
+
+dbp:London_Symphony_Orchestra
+      a       dbp:MusicArtist .
+
+dbp:C_major
+      a       mo:Key ;
+      mo:key_name "C-Ut majeur" .
+
+dbp:Allegro_Vivace
+      a       dbp:Movement ;
+      mo:movement_number "4" .
+
+dbp:Claudio_Abbado
+      a       dbp:MusicArtist .
+
+dbp:MusicArtist
+      rdfs:subClassOf foaf:Agent .
+
+qqpf:Enregistrement_Jupiter
+      a       dbp:Performance ;
+      mo:conductor dbp:Claudio_Abbado ;
+      mo:performance_of <http://dbpedia.org/page/#Symphony_No._41_(Mozart)> ;
+      mo:performer dbp:London_Symphony_Orchestra .
+
+dbp:Molto_Allegro
+      a       dbp:Movement ;
+      mo:movement_number "1" .
+
+dbp:Symphony
+      a       mo:Genre .
+
+dbp:Composition
+      rdfs:subClassOf event:Event .
+
+dbp:Andante_Cantabile
+      a       dbp:Movement ;
+      mo:movement_number "3" .
+
+dbp:Menuetto
+      a       dbp:Movement ;
+      mo:movement_number "2" .
+
+dbp:Movement
+      rdfs:subClassOf dbp:MusicalWork .
+
+dbp:Wolfgang_Amadeus_Mozart
+      a       dbp:MusicArtist .
+
+<http://dbpedia.org/page/#Symphony_No._41_(Mozart)>
+      a       dbp:MusicalWork ;
+      rdfs:label "Symphonie 41" ;
+      mo:composed_in "1980" ;
+      mo:key  dbp:C_major ;
+      mo:movement dbp:Andante_Cantabile , dbp:Menuetto , dbp:Allegro_Vivace , dbp:Molto_Allegro ;
+      mo:title "Jupiter" ;
+      qqpf:enregistre_par qqpf:orchestre_symphonique_de_londres ;
+      qqpf:est_compose_par
+              qqpf:mozart .
